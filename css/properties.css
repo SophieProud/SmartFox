@@ -231,8 +231,7 @@ main div{
 	width: auto;
 }
 
-/* A class I use extensively for emphasis of important content */
-.title{
+/* A class I use extensively for emphasis of important content */.title{
 	font-weight: bold;
 }
 
@@ -260,7 +259,7 @@ main div{
 	/* I added the picture as a background instead of an img element in the HTML file to simplify the CSS.
 	Had I created an img element, the properties to set the "Play" button over the picture and not have it
 	misbehave during resizing would have taken too much time and space. */
-	background: url(../pictures/fox.jpg) no-repeat;
+	background: url(../pictures/Fox.jpg) no-repeat;
 	background-size: cover;
 }
 
