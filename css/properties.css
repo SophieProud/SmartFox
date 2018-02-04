@@ -1,0 +1,578 @@
+/*--------------------------------
+---All code written below is------
+the intellectual property of Ruxandra Maria Mindru.
+-----------------------------------
+*/
+
+/*----------------------------------
+-------------------------------------
+---------GENERAL PROPERTIES---------
+---- to be applied everywhere ------
+------------------------------------
+*/
+body {
+	width: 100%;
+	margin: 0 auto;
+	/* I have imported Google fonts, to make the aesthetics of the page work. However, should they fail, these are the fonts
+	the content could fall back to. */
+	font-family: 'Arial', 'Times New Roman';
+	background: url(../pictures/background.jpg) no-repeat;
+	background-size: cover;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+img:hover{
+	box-shadow: 2px 2px 2px rgb(153, 255, 255);
+}
+
+a:link{
+	color: rgb(255, 204, 102);
+	text-decoration: none;
+}
+
+a:visited{
+	color: rgb(255, 204, 102);
+}
+
+/* Most important modification of the body: the switch from a full-screen on mobile to a 70% width
+on tablet or desktop */
+@media screen and (min-width: 880px){
+	body{
+		width: 70%;
+	}
+}
+
+/* -----------------------------
+--------------------------------
+------------HEADER STUFF--------
+--------------------------------
+--------------------------------*/
+header {
+	background: #000000 url(../pictures/flowers.jpg) no-repeat;
+	background-size: cover;
+	padding: 4%;
+	height: 70px;
+	margin: 0 auto;
+}
+
+header img, h1 {
+	display: inline;
+	text-align: center;
+}
+
+/* The logo changes size, to allow the website's name to stand out. */
+header img {
+	margin-top: 0.5em;
+	width: 13%;
+	float: left;
+	overflow: auto;
+	border-radius: 50%;
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+
+header h1 {
+	font-size: 3em;
+	font-family: 'Dancing Script';
+	color: rgb(255, 204, 102);
+	text-shadow: #000000 2px 2px 0px;
+	margin: 30px 0px 0px 12px;
+	-webkit-transition: all 0.1s ease;
+	-moz-transition: all 0.1s ease;
+	-o-transition: all 0.1s ease;
+	transition: all 0.1s ease;
+}
+
+#motto {
+	font-family: 'Architects Daughter';
+	font-size: 1.5em;
+	padding: 3%;
+	/* I wanted the motto to be slightly off-center compared to the title */
+	margin: -20px;
+	color: rgb(255, 204, 153);
+	text-shadow: #000000 2px 2px 0px;
+	text-align: center;
+	-webkit-transition: all 0.1s ease;
+	-moz-transition: all 0.1s ease;
+	-o-transition: all 0.1s ease;
+	transition: all 0.1s ease;
+}
+
+@media screen and (min-width: 480px){
+	header img{
+		margin-top: 0;
+	}
+}
+
+@media screen and (min-width: 680px){
+	header {
+		height: 7%;
+	}
+	header h1 {
+		font-size: 7em;
+	}
+	#motto{
+		font-size: 3em;
+	}
+	header img{
+		width: 20%;
+	}
+	
+}
+
+@media screen and (min-width: 1276px){
+	header h1 {
+		font-size: 10em;
+	}
+}
+
+/* ---------------------------
+------------------------------
+-------NAVIGATION HERE-------- 
+------------------------------
+------------------------------
+*/
+
+nav{
+	margin: 0;
+	font-size: 1em;
+	font-family: 'Architects Daughter';
+	-webkit-transition: all 0.1s ease;
+	-moz-transition: all 0.1s ease;
+	-o-transition: all 0.1s ease;
+	transition: all 0.1s ease;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+nav ul li{
+	display: block;
+	border: 1px solid rgba(51, 53, 255, 0.5);
+	color: rgb(255, 204, 102);
+	text-shadow: #000000 1px 2px 0px;
+	background: rgb(51, 153, 255);
+	text-align: center;
+	-webkit-transition: all 0.1s ease;
+	-moz-transition: all 0.1s ease;
+	-o-transition: all 0.1s ease;
+	transition: all 0.1s ease;
+}
+
+nav ul li:hover{
+	color: white;
+	background: rgb(153, 255, 255);
+}
+
+@media screen and (min-width: 480px){
+	nav ul{
+		background-color: rgba(128, 159, 255, 0.5);
+		overflow: hidden;
+	}
+	nav ul li {
+		display: inline-block;
+		padding: 0 1% 0 1%;
+		border: none;
+	}
+}
+
+@media screen and (min-width: 680px){	
+	nav {
+		font-size: 1.5em;
+	}
+}
+
+@media screen and (min-width: 1200px){
+	nav{
+		font-size: 2em;
+	}
+}
+
+/* ---------------------
+---------------------------
+---------MAIN HERE----------- 
+-----------------------------
+------------------
+*/
+main {
+	font-family: 'Arial';
+	color: rgb(255, 204, 102);
+	text-shadow: #000000 1px 1.5px 1px;
+}	
+
+main h1{
+	font-size: 2em;
+	text-align: center;
+	font-family: 'Architects Daughter';
+}
+main div{
+	float: left;
+	text-align: center;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+#content{
+	clear: left;
+	width: 100%;
+}
+.second-layer img {
+	max-width: 90%;
+	width: auto;
+}
+
+/* A class I use extensively for emphasis of important content */
+.title{
+	font-weight: bold;
+}
+
+/* A class I use extensively for emphasis of hyper links, without the use of underline */
+.highlight {
+	color: rgb(255, 253, 0);
+}
+
+.second-layer {
+	float: left;
+	overflow: auto;
+	background: rgb(50, 102, 255);
+	background: rgba(50, 102, 255, 0.5);
+	margin: 12px 0;
+	padding: 0.5em 0;
+}
+
+ #game, .second-layer{
+	width: 100%;
+}
+
+#game {
+	margin: 1.2em 0 0 0;
+	height: 350px;
+	/* I added the picture as a background instead of an img element in the HTML file to simplify the CSS.
+	Had I created an img element, the properties to set the "Play" button over the picture and not have it
+	misbehave during resizing would have taken too much time and space. */
+	background: url(../pictures/fox.jpg) no-repeat;
+	background-size: cover;
+}
+
+#game p {
+	background-color: rgba(200, 100, 255, 0.5);
+	font-size: 1em;
+	font-family: 'Lato', sans-serif;
+	text-align: justify;
+}
+
+.button{
+	position: relative;
+	bottom: 0;
+	right: 12px;
+	float: right;
+	font-size: 3em;
+	background-color: rgb(100, 104, 202);
+	border-radius: 20% 0;
+	-webkit-transition: all 0.6s ease;
+	-moz-transition: all 0.6s ease;
+	-o-transition: all 0.6s ease;
+	transition: all 0.6s ease;
+}
+
+.button a:hover{
+	text-shadow: 2px 2px 2px #000000;
+}
+
+@media screen and (min-width: 680px){
+	main .second-layer {
+		padding: 0.5em 0.5%;
+	}
+	main div:not(#content):not(#game){
+		margin: 12px;
+	}
+	#ratings {
+		width: 20%;
+	}
+	#game{
+		width: 75%;
+	}
+	.second-layer {
+		max-width: 28%;	
+		width: auto;
+		overflow: auto;
+	}
+	.second-layer img{
+		transition: box-shadow 0.3s ease;
+	}
+}
+
+@media screen and (min-width: 1128px){
+	main h1{
+		font-size: 3em;
+	}
+}
+
+/* -------------------------------
+----------------------------------
+PAGES WITH CLEARLY DIVIDED CONTENT
+--------------HERE----------------
+----------------------------------
+----------------------------------
+*/
+article{
+	clear: left;
+	width: 95%;
+	padding: 1em 2.5%;
+	margin: 1em 0;
+	/* keeps the title centered, as later I justify the paragraphs */
+	text-align: center;
+	background: rgba(51, 153, 255, 0.8);
+	overflow: auto;
+}
+
+article p{
+	text-align: justify;
+}
+
+.founder{
+	clear: left;
+	margin: 3em 2%;
+}
+
+.founder h1{
+	margin: 0;
+	clear: left;
+}
+.founder img {
+	float: left;
+	max-width: 80%;
+	width: auto;
+	border-radius: 50%;
+	margin: 0.1em 10% 0.1em 10%;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+#videos img{
+	border-radius: 2%;
+}
+
+.story{
+	margin: 0 0 0.5em 0;
+	width: 100%;
+	background: rgba(51, 153, 255, 0.8);
+}
+
+canvas{
+	margin: 1em 0;
+	border: 1px solid blue;
+}
+
+@media screen and (min-width: 480px){
+	.founder {
+		text-align: justify;
+	}
+	.founder h1{
+		clear: none;
+	}
+	.founder img {
+		max-width: 20%;
+		width: auto;
+		margin: 0.4em 3%;
+	}
+	.story{
+		
+		margin: 1em 2%;
+		padding: 0.5%;
+		width: 95%;
+		max-height: 200px;
+		height: auto;
+	}
+}
+
+@media screen and (min-width: 1200px){
+	.story{
+		width: 45%;
+	}
+}
+
+/* ---------------------------
+------------------------------
+---TEXT-HEAVY ARTICLES HERE---
+------------------------------
+------------------------------
+*/
+
+.blog p{
+	clear: left;
+	text-align: justify;
+}
+
+.blog ul{
+	text-align: left;
+}
+
+.blog img{
+	margin-left: 5%;
+	max-width: 70%;
+	max-height: 15em;
+	width: auto;
+	height: auto;
+}
+
+/*Creates the structured format of the "Ratings" page*/
+.best_of{
+	clear: left;
+	display: flex;
+	flex-direction: column;
+	max-width: 40%;
+	width: auto;
+}
+
+.item{
+	max-width: 100%;
+	width: auto;
+	margin: 1em 20%;
+	text-align: left;
+}
+
+/*Stylizing the button for the game*/
+#new{
+	border: 2px solid rgb(255, 204, 102);
+	background-color: none;
+	border-radius: 6%;
+	color: rgb(255, 204, 102);
+	text-shadow: 1px 1px 2px black;
+}
+
+/*Arranging the form so that it will fit and look good*/
+form{
+	overflow: auto;
+	display: flex;
+	flex-direction: column;
+	font-size: 1.5em;
+	padding: 0.2em 3%;
+	margin: 1em 0 0 5%;
+	background-color: rgba(51, 51, 255, 0.4);
+	border: 5px solid rgb(0, 0, 180);
+	border-radius: 3%;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.mail{
+	float: left;
+	margin: 1em 5%;
+}
+
+/*insures the address block doesn't overlap the form*/
+#address{
+	float: right;
+}
+
+@media screen and (min-width: 480px){
+	.blog p{
+		clear: none;
+	}
+	.blog img{
+		float: left;
+		max-width: 50%;
+		margin: 0.5em 2%; 
+	}
+	.best_of{
+		flex-direction: row;
+	}
+	.item{
+		float: left;
+		margin: 1em 3%;
+		max-height: 10em;
+		height: auto;
+		width: 25%;
+	}
+	#address{
+		margin-left: 10%;
+	}
+}
+/*An additional breakpoint that allows the form to maintain its column flex
+for longer, as a row display under 650px width lacked aesthetics*/
+@media screen and (min-width: 650px){
+	form{
+		flex-direction: row;
+	}
+}
+/* ---------------------
+---------------------------
+---------FOOTER HERE----------- 
+-----------------------------
+------------------
+*/
+
+footer {
+	clear: both;
+	bottom: 0;
+	left: 15%;
+	right: 15%;
+	height: 25%;
+	/*linear-gradient is not supported well by other browsers, except for Chrome, so vendor prefixes were a necessity*/
+	background: rgb(0, 102, 255);
+	background: -webkit-linear-gradient(right,rgb(153, 255, 255),rgb(0, 102, 255));
+	background: -o-linear-gradient(right,rgb(153, 255, 255),rgb(0, 102, 255));
+	background: -moz-linear-gradient(right,rgb(153, 255, 255),rgb(0, 102, 255));
+	background: linear-gradient(right,rgb(153, 255, 255),rgb(0, 102, 255));
+	text-shadow: #000000 2px 1px 1px;
+	margin: 0px;
+	display: center;
+	font-family: 'Architects Daughter';
+	font-size: 1.5em;
+	overflow: auto;
+}
+
+footer ul {
+	padding: 10px 0px 0px 40px;
+}
+
+footer ul li{
+	display: inline;
+	list-style-type: none;
+	padding: 30px 10px 10px 10px;
+}
+
+footer p {
+	padding: 0px 0px 0px 50px;
+	font-size: 0.8em;
+	color: rgb(255, 204, 102);
+}
+
+footer img {
+	opacity: 0;
+	float: right;
+	width: 7%;	
+}
+
+/* Necessary additional property to create the change of colour */
+footer ul li a:hover {
+	color: white;
+}
+
+@media screen and (min-width: 480px){
+	footer img{
+		opacity: 1;
+		float: right;
+		width: 10%;
+		height: 10%;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+		border-radius: 50%;
+		margin: 1em 2% 0 0;
+	}
+}
